@@ -6,6 +6,7 @@ import { Typography } from '@mui/material';
 
 const Home = () => {
   const [weatherData, setWeatherData] = useState(null);
+  // eslint-disable-next-line no-unused-vars
   const [location, setLocation] = useState('');
 
   useEffect(() => {
