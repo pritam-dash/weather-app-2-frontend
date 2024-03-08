@@ -99,7 +99,7 @@ return (
           </Grid>
           {groupedForecast[date].map((item, i) => (
             <Grid item xs={12} sm={6} md={4} key={i}>
-              <Paper className="bg-gradient-to-br from-blue-400 to-indigo-600 hover:bg-purple-600 transition duration-300 ease-in-out" style={{ padding: 2, borderRadius: 2, margin: 1 }}>
+              <Paper style={{ padding: 2, borderRadius: 2, margin: 1 }}>
                 <Typography variant="body2">
                   <span style={{ fontWeight: 'bold' }}>Time: </span>
                   {item.dt_txt.split(' ')[1]}
@@ -140,7 +140,6 @@ return (
                 variant="text"
                 color="primary"
                 onClick={() => handleFavoriteLocationClick(location)}
-                className="hover:text-blue-600 transition duration-300 ease-in-out"
               >
                 {location}
               </Button>
